@@ -25,7 +25,7 @@ public class ErrorControllerAdvice {
 //        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
 //    }
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(value = Exception.class)
     public void exceptionTest(Exception e, HttpServletRequest req) {
         e.printStackTrace();
         notificationManager.sendNotification(e, req.getRequestURI(), getParams(req));
