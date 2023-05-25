@@ -43,13 +43,21 @@ export const signUpAxios = async (
 };
 
 export const loginAxios = async (id: string, password: string) => {
+  console.log("44444444444444444444444444444444444444444");
   try {
-    const response = await axios.post(SERVER_URL + `/user/login`, {
-      email: id,
-      password,
-    });
+    const response = await axios
+      .post(SERVER_URL + `/user/login`, {
+        email: id,
+        password,
+      })
+      .then((res) => {
+        console.log(res);
+        console.log("555555555555555555555555555555555555555555555");
+      });
     return response.data.data;
   } catch (error) {
+    console.log(error);
+    console.log("66666666666666666666666666666666666666666");
     return null;
   }
 };
