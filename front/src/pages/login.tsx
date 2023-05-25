@@ -31,20 +31,14 @@ export default function Login() {
       setFailMessage(true);
     }
 
-    console.log("1111111111111111111111111111");
     const res = await loginAxios(id, password);
     // 로그인 성공해서 'data'키가 있으면 쿠키 저장
-    console.log("2222222222222222222222222222");
     if (res) {
       console.log("res", res);
-      const cookies = parseCookies();
-      console.log("3333333333333333333333333333333");
-      console.log("cookies", cookies);
       setCookie(null, "accessToken", res.token, {
         maxAge: 60 * 60 * 24,
         secure: true,
         path: "/",
-        // domain: "k8b107.p.ssafy.io",
       });
       setCookie(null, "nickName", res.nickname, {
         maxAge: 60 * 60 * 24,
