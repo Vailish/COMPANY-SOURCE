@@ -42,15 +42,14 @@ export default function Login() {
       console.log("cookies", cookies);
       setCookie(null, "accessToken", res.token, {
         maxAge: 60 * 60 * 24,
-        // secure: true,
+        secure: true,
         path: "/",
-        domain: "k8b107.p.ssafy.io",
+        // domain: "k8b107.p.ssafy.io",
       });
       setCookie(null, "nickName", res.nickname, {
         maxAge: 60 * 60 * 24,
-        // secure: true,
+        secure: true,
         path: "/",
-        domain: "k8b107.p.ssafy.io",
       });
       router.back();
       // if (isRedirect) {
