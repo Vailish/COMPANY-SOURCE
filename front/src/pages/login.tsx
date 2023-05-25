@@ -44,11 +44,13 @@ export default function Login() {
         maxAge: 60 * 60 * 24,
         secure: true,
         path: "/",
+        domain: "k8b107.p.ssafy.io",
       });
       setCookie(null, "nickName", res.nickname, {
         maxAge: 60 * 60 * 24,
         secure: true,
         path: "/",
+        domain: "k8b107.p.ssafy.io",
       });
       router.back();
       // if (isRedirect) {
