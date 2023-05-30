@@ -46,7 +46,7 @@
 | Application      | Language     | Framework           | DB        |
 | ---------------- | ------------ | ------------------- | --------- |
 | ✅ Desktop Web    | ✅ JavaScript | 🔲 Vue.js            | ✅ Mysql   |
-| 🔲 Mobile Web     | 🔲 TypeScript | ✅ React             | ✅ MongoDB |
+| 🔲 Mobile Web     | ✅ TypeScript | ✅ React             | ✅ MongoDB |
 | 🔲 Responsive Web | 🔲 C/C++      | ✅ NEXT.JS           | ✅ Redis   |
 | 🔲 Android App    | 🔲 C#         | 🔲 Node.js           |
 | 🔲 iOS App        | ✅ Python     | 🔲 Flask/Django      |
