@@ -20,7 +20,7 @@
 💖 **서비스 소개**
 
 - 취업이나 기업에 대해 알기 위해서 기업을 분석하는것이 점차 늘어나고 있습니다. 하지만 복잡한 계산식과 어려운 설명이 되어있는 기업분석은 사용자가 쉽게 접하지 못합니다. 따라서 컴퍼니 소스는 이를 보다 편하지만 전문적인 정보를 제공합니다.
-
+- ![발표 PPT](https://docs.google.com/presentation/d/17c3rpK-kKDe07tzh_0bZBmGhnjof0idz8WbAJUnEa3w/edit?usp=sharing)
 
 👤 **서비스 대상**
 
@@ -118,7 +118,7 @@
 <br />
 <br />
 
-## 🛠 기술 🛠
+## 🛠 데이터 및 기술 🛠
 
 ### ⚠ 개발 에러 및 로그 슈팅 ⚠
 
@@ -133,6 +133,18 @@
 <br>
 <br>
 
+### 💾 데이터 및 분석법 💾
+- 데이터
+    - 기업 재무재표 : 전자공시시스템 
+    - 산업평균 데이터 : 한국은행 경제통제시스템
+- 분석법 
+    - 재무분석 : 기업가치 중심의 경영분석 제 4판 ![(분석법 보러가기)](https://www.notion.so/0d6b3b25797847e68829a02cbb9af636?pvs=4)
+    - 정성분석 : ChatGPT API
+![기업분석-데이터 및 분석 흐름도](https://github.com/Vailish/COMPANY-SOURCE/assets/109258380/d424ee4d-0b2d-458b-98b1-c8218712330f)
+
+- 데이터처리
+    - 전자공시시스템 OPENAPI -> Python을 통한 데이터 가공 -> MYSQL에 재무정보 저장 -> Spring을 통한 재무분석 -> MongoDB에 분석결과 저장 / MySQL에 평가지표 저장 -> Spring을 통한 클라이언트 요청 응답
+![데이터처리 흐름도](https://github.com/Vailish/COMPANY-SOURCE/assets/109258380/6a3f3203-b4bc-4cce-814e-f0dbabb0a1c8)
 
 ### 🧮 분석법 계산 🧮
 
